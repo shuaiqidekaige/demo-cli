@@ -1,8 +1,0 @@
-{
-  "name": "a",
-  "version": "0.1.0",
-  "private": true,
-  "devDependencies": {
-    "vue": "2.6.12"
-  }
-}
