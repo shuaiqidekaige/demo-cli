@@ -7,7 +7,7 @@
     "create-demo": "bin/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo 1"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,16 @@
     "fs-extra": "^9.0.1",
     "inquirer": "^7.3.3",
     "validate-npm-package-name": "^3.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
