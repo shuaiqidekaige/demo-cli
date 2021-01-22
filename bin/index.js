@@ -7,8 +7,6 @@ const path = require('path');
 
 const packageJson = require('../package.json');
 
-let projectName
-
 function validateName(name) {
   const validationResult = validateProjectName(name);
   if (!validationResult.validForNewPackages) {
